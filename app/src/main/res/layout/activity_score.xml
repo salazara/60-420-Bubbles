@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aj.a420bubbles.ScoreActivity"
+    android:orientation="vertical"
+    android:background="#6699cc">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/score_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/high_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/send_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:backgroundTint="#9fbfdf"
+        android:text="send high score to web service"
+        android:onClick="onClickSendScore"/>
+
+    <Button
+        android:id="@+id/view_scores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:backgroundTint="#9fbfdf"
+        android:text="view high scores from web service"
+        android:onClick="onClickViewScores"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aj.a420bubbles.GameActivity">
+
+    <!-- GAME HUD -->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#9fbfdf">
+
+        <TextView
+            android:id="@+id/game_score"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25pt"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="camera"
+            android:backgroundTint="#9fbfdf"
+            android:onClick="onClickCameraButton"/>
+
+    </LinearLayout>
+
+    <!-- GAME ACTION -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/game_layout_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/game_layout_bubbles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CC336699">
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

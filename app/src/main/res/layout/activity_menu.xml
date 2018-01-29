@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6699cc"
+    tools:context="com.example.aj.a420bubbles.MenuActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="420 BUBBLES"
+        android:textStyle="bold"
+        android:textSize="35pt"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:onClick="onClickPlayerName"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:backgroundTint="#9fbfdf"
+        android:text="play"
+        android:onClick="onClickPlayButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:backgroundTint="#9fbfdf"
+        android:text="scores"
+        android:onClick="onClickScoresButton"/>
+</LinearLayout>
